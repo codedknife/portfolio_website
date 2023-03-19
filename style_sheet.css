@@ -1,0 +1,46 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.topnav {
+border:none;
+text-decoration: none;
+text-align: left;
+text-decoration: none;
+background-color: lightsalmon;
+font-size: 20px;
+margin: 0px 0px;
+cursor: pointer;
+}
+
+.btn {
+border:none;
+background-color:lightsalmon;
+font-size: 10px;
+margin: 0px 10px;
+cursor: pointer;
+}
+
+.btn:hover {
+  background-color: salmon;
+}
+
+h1 {
+margin: 10px 25px;
+
+} 
+h2 {
+margin: 5px 40px;
+}
+
+h3 {
+margin: 5px 40px;
+}
+
+p {
+text-align: center;
+} 
+
+.notbold {
+    font-weight:normal
+}
