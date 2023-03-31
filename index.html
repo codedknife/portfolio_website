@@ -1,51 +1,140 @@
 <!DOCTYPE html>
 <html>
+
 <head> 
-<link rel="stylesheet" href="style_sheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_sheet.css">
 </head>
 
-<code>
-<div class="topnav" style="background-color: lightsalmon"> 
+<div class="navbar"> 
+  <button class="namebutton"> Ashley Tran </button>
+  <a href="#portfolio-page"> <button class="navbarbutton"> /Portfolio </button></a> 
+  <a href="#main"> <button class="navbarbutton"> /Home </button></a> 
+</div>
 
-<a href= "index.html"> <button class= "topnav main" style="background-color: lightsalmon">
-MAIN </button></a>
+<div class="row">
+  <div id= "main" class="col-12" style="background-color: #C4B7AF">
+    <br><br><br><br>
+  </div>
+</div>
 
-<a href= "coursework.html"> <button class= "topnav coursework">
-COURSEWORK </button></a>
+<div id="main" class="row">
+  <div class="col-12" style="background-color: #DDD0C8">
+    <h1 style="text-align: center;">
+      <span class="h1title">Hello!</span><span class="blinkingcursor">|</span>
+    </h1>
+  </div>
+</div>
 
-<a href= "portfolio.html"> <button class= "topnav portfolio"> PORTFOLIO </button> </a>
+<div class="row">
+  <div class="col-12" style="background-color: #C4B7AF">
+    <h2 style="text-align: center;"> 
+      <span class='notbold'> I'm </span><span style="color:salmon;">Ashley</span>,
+    </h2> 
+    <h3 class="h3desc" style="text-align: center;"> 
+      <span class='notbold'> 
+      a computer science graduate from Michigan State University. </span>
+      <img src="https://em-content.zobj.net/thumbs/240/twitter/322/waving-hand_light-skin-tone_1f44b-1f3fb_1f3fb.png" height="25px" width="25px">
+    </h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12" style="background-color: #C4B7AF">
+   <center>
+    <div>
+      <a href="https://github.com/codedknife"> <button class= "contactbtn github" title="GITHUB"> <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" height= 20px width=" 20px"> </button></a>
+      <a href="LINKEDIN.COM"> <button class= "contactbtn linkedin" title="LINKEDIN"> <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" height= 20px width=" 20px"> </button></a>
+      <a href="mailto: tranash3@msu.edu"> <button class= "contactbtn email" title="EMAIL"> <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-512.png" height= 20px width=" 20px"> </button></a>
+    </div>
+    </div>
+  </center>
+</div>
+<div class="row">
+
+  <div class="col-12" style="background-color: #C4B7AF">
+    <br><br><br><br><br>
+  </div>
+</div>
+
+<div class="row" id="portfolio-page">
+  <div class="col-12">
+    <h2 style ="text-shadow: 3px 3px white;"> PORTFOLIO </h2>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-4">
+    <div class="portfoliocards">
+      <div style="text-align: center;">
+      <h3> 
+        <button class="h3cards"> Personal Website</button> 
+        <button class="cardsoutline">HTML</button> <button class="cardsoutline">CSS</button>
+      </h3>
+    </div>
+      <div class="portfoliocardsimage">
+        <center>
+          <br><br><br>
+        <p style="color: white;">The website you are currently on.</p>
+      </center>
+      </div>
+
+      <p class="description"> 
+        A website to experiment with front-end website development and responsive design from scratch.
+      </p>
+      <br><br>
+      <center>
+      <button class="codebtn"> Code </button>
+      </center>
+      <br>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="portfoliocards">
+      <div style="text-align: center;">
+      <h3> 
+        <button class="h3cards">EXAMPLE</button> 
+        <button class="cardsoutline">TAG</button> <button class="cardsoutline">TAG</button>
+      </h3>
+    </div>
+      <div class="portfoliocardsimage"></div>
+      <p class="description"> 
+        Insert a description here. Insert a description here.
+      </p>
+      <br><br>
+      <center>
+      <button class="contactbtn"> Code </button>
+      </center>
+      <br>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="portfoliocards">
+      <div style="text-align: center;">
+      <h3> 
+        <button class="h3cards">CSE232 PROJECT</button> 
+        <button class="cardsoutline">C++</button> <button class="cardsoutline">BASH</button>
+      </h3>
+    </div>
+      <div class="portfoliocardsimage"></div>
+      <p class="description"> 
+        Insert a description here. Insert a description here.
+      </p>
+      <br><br>
+      <center>
+      <button class="contactbtn"> Code </button>
+      </center>
+      <br>
+    </div>
+  </div>
+
 
 </div>
 
-<br>
-<br>
+<div class="row">
+</div>
 
-<body>
-<!NAME>
-<h1> "Hello, World!" </h1>
-<h2> <span class='notbold'> I'm </span> Ashley, </h2>
-
-<!DESCRIPTION>
-<h3> <span class='notbold'>
-a computer science graduate from </span> <span style= 'background-color: #18453B; color: white; padding-left: 5px'> Michigan State University. </span></h3> 
-
-<br>
-<br>
-
-<p> I have a passion for anything and everything tech.</p>
-
-<center> <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tatung-einstein-computer.png/1200px-Tatung-einstein-computer.png" alt= "computer" height= 75px width= 75px> </center>
-
-<br><br>
-<!BUTTONS>
-<center>
-<form action="https://github.com/codedknife"> <button class= "btn github"> GITHUB </button> </form>
-
-<form action= "LINKEDIN"> <button class= "btn linkedin"> LINKEDIN </button> </form>
-
-<form action = "coursework.html"> <button class= "btn email"> EMAIL </button> </form>
-</center>
-
-</body>
-</code>
 </html>
