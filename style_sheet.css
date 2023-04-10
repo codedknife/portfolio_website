@@ -1,5 +1,5 @@
 body {
-  background-color: #DDD0C8;
+  background-color: whitesmoke;
   max-width: 100%;
   overflow-x: hidden;
   font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
@@ -10,39 +10,39 @@ body::-webkit-scrollbar{
   display: none;
 }
 
-.navbar{
+.mynavbar{
   position: fixed;
   z-index: 100;
   overflow: hidden;
   border: none;
-  background-color:#88B2CC;
+  background-color: whitesmoke;
   text-decoration: none;
   width: 100%;
   top: 0;
-  padding: 5px 5px;
+  padding: 15px;
 }
 
 .namebutton {
   border: none;
-  font-size: 20px;
+  font-size: 25px;
   margin: 0px 5px;
   float: left;
   font-weight: bold;
   text-decoration: none;
-  background-color: #88B2CC;
-  color: #323232;
+  background-color: whitesmoke;
+  color: dodgerblue;
   text-shadow: 1px 1px white;
 }
 
 .navbarbutton {
   border: none;
-  font-size: 20px;
+  font-size: 25px;
   margin: 0px 5px;
   float: right;
   font-weight: bold;
   text-decoration: none;
-  background-color: #88B2CC;
-  color: #323232;
+  color: #4C4C4C;
+  padding-left: 10px;
   text-shadow: 1px 1px white;
   cursor: pointer;
 }
@@ -52,81 +52,49 @@ body::-webkit-scrollbar{
   text-shadow: 1px 1px white;
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-
-/* For mobile phones: */
-[class*="col-"] {
+.row {
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-
-  /*border: 1px solid red;*/
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.profilephoto {
-  background-color: #323232;
-  box-shadow: 10px 10px #C4B7AF;
-  height: 334.5px;
-  width: 334.5px;
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
 .h1title {
-  font-size: 75px;
+  font-size: 100px;
   color: #323232;
   text-shadow: 5px 5px white;
   animation: fade-effect 1s;
   }
 
-.blinkingcursor {
-  font-size: 75px;
-  color: #323232;
-  text-shadow: 5px 5px white;
-  animation: cursor-blink 1.5s infinite steps(2);
-}
-  
-  h2 {
-    font-size: 50px;
-    line-height: 0px;
-    color: #323232;
+  .frontpage a {
+    text-decoration: none;
   }
-  
-  .h3desc {
-    font-size: 20px;
-    color: #323232;
+  .frontpage a:hover {
+    font-style: italic;
   }
-  
+
+  .portfoliotitle {
+  font-size: 50px;
+  color: salmon;
+  text-shadow: 2.5px 2.5px white;
+  }
+
   @keyframes fade-effect {
   
     0% {
-      text-shadow: 0px 0px #DDD0C8;
+      text-shadow: 0px 0px whitesmoke;
     }
     100% {
       text-shadow: 5px 5px white;
@@ -139,8 +107,27 @@ body::-webkit-scrollbar{
     }
   }
 
+h2 {
+  font-size: 40px;
+  color: #323232;
+}
+
+
+.blinkingcursor {
+  font-size: 25px;
+  color: #323232;
+  text-shadow: 2.5px 2.5px dodgerblue;
+  animation: cursor-blink 1.5s infinite steps(2);
+}
+
+  .h3desc {
+    font-size: 20px;
+    color: #323232;
+  }
+
 .contactbtn {
 border:none;
+text-decoration: none;
 font-size: 15px;
 background-color: white;
 padding: 5px 5px 5px 5px;
@@ -167,10 +154,9 @@ cursor: pointer;
   }
 
 
-.portfoliocards {
-  float: left;
-  background-color: #C4B7AF;
-  width: 100%;
+.portfoliotags {
+  color: white;
+  background-color: dodgerblue;
 }
 
 .portfoliocardsimage {
